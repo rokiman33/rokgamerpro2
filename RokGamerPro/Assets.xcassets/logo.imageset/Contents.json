@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "04_swiftui-apps-ios-logo-name.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

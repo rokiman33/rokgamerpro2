@@ -11,6 +11,7 @@
 		287DC33C26D49CBD0025CDFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DC33B26D49CBD0025CDFD /* ContentView.swift */; };
 		287DC33E26D49CBE0025CDFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287DC33D26D49CBE0025CDFD /* Assets.xcassets */; };
 		287DC34126D49CBE0025CDFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287DC34026D49CBE0025CDFD /* Preview Assets.xcassets */; };
+		28B13F0B26EEAE3A0000BA58 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B13F0A26EEAE3A0000BA58 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		287DC33D26D49CBE0025CDFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287DC34026D49CBE0025CDFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		287DC34226D49CBE0025CDFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B13F0A26EEAE3A0000BA58 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		287DC33826D49CBD0025CDFD /* RokGamerPro */ = {
 			isa = PBXGroup;
 			children = (
+				28B13F0926EEAE100000BA58 /* View */,
 				287DC33926D49CBD0025CDFD /* RokGamerProApp.swift */,
 				287DC33B26D49CBD0025CDFD /* ContentView.swift */,
 				287DC33D26D49CBE0025CDFD /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				287DC34026D49CBE0025CDFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28B13F0926EEAE100000BA58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28B13F0A26EEAE3A0000BA58 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287DC33C26D49CBD0025CDFD /* ContentView.swift in Sources */,
+				28B13F0B26EEAE3A0000BA58 /* Home.swift in Sources */,
 				287DC33A26D49CBD0025CDFD /* RokGamerProApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

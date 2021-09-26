@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ROKGamer_small.fw.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

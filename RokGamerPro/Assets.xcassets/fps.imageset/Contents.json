@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fps.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
