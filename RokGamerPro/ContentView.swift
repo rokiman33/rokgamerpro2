@@ -53,9 +53,10 @@ struct InicioYRegistroView:View{
 }
 
 struct InicioSesionView:View {
-    @State var correo = ""
-    @State var contraseña = ""
-    @State var IsPantallaHomeActive = false
+    
+    @State var correo:String = ""
+    @State var contraseña:String = ""
+    @State var IsPantallaHomeActive:Bool = false
     
     
     var body: some View{
@@ -80,11 +81,12 @@ struct InicioSesionView:View {
                 
                 Text("¿Olvidaste tu Contraseña?").font(.footnote).frame(width: 300, alignment:.trailing).foregroundColor(Color("Dark-Cian")).padding(.bottom)
                 
-                Button(action: IniciarSesion, label: {
+                
+                Button(action: iniciarSesion){
                     Text("Iniciar Sesion").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.white)
-                        .frame(maxWidth:.infinity,alignment: .center).padding(EdgeInsets(top: 11, leading: 18, bottom: 11, trailing: 18)).overlay(RoundedRectangle(cornerRadius: 6.0).stroke(Color("Dark-Cian"),lineWidth: 1).shadow(color: .white,radius: 1))
-                })
+                              .foregroundColor(.white)
+                              .frame(maxWidth:.infinity,alignment: .center).padding(EdgeInsets(top: 11, leading: 18, bottom: 11, trailing: 18)).overlay(RoundedRectangle(cornerRadius: 6.0).stroke(Color("Dark-Cian"),lineWidth: 1).shadow(color: .white,radius: 1))
+                }
                 
                 Text("Iniciar Sesion con Redes Sociales").foregroundColor(.white)
                 HStack{
@@ -111,11 +113,25 @@ struct InicioSesionView:View {
                            })
         }
     }
+    
+    func iniciarSesion() {
+        let objetoDatosUsuario = SaveData()
+                
+                 print("Mi correo es \(correo) y mi contraseña es \(contraseña)")
+                
+                if objetoDatosUsuario.validar(correo: correo, contrasena: contraseña){
+                    IsPantallaHomeActive.toggle()
+                }else{
+                    //Comentar linea de abajo para habilitar funcionalidad de validacion de usuario.
+                    IsPantallaHomeActive.toggle()
+                    print("Tus datos son incorrectos")
+                    
+                }
+    }
+
+    
 }
 
-func IniciarSesion() {
-   print("Inicio de Sesion")
-}
 
 
 struct RegistroView:View {
@@ -167,11 +183,11 @@ struct RegistroView:View {
                 }
                 Divider().frame(height:1).background(Color("Dark-Cian")).padding(.bottom)
             }
-                Button(action: IniciarSesion, label: {
+                Button(action: registrarse) {
                     Text("REGISTRATE").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.white)
                         .frame(maxWidth:.infinity,alignment: .center).padding(EdgeInsets(top: 11, leading: 18, bottom: 11, trailing: 18)).overlay(RoundedRectangle(cornerRadius: 6.0).stroke(Color("Dark-Cian"),lineWidth: 1).shadow(color: .white,radius: 1))
-                })
+                }
                 
                 Text("Iniciar Sesion con Redes Sociales").foregroundColor(.white).frame(maxWidth:.infinity, alignment:.center).foregroundColor(.white)
                 HStack{
@@ -199,12 +215,32 @@ struct RegistroView:View {
             
         }
     }
+    
+    func TomarFoto(){
+        print("Voy a tomar fotografia de perfil")
+    }
+
+    func registrarse() {
+        
+        print("Me registro con el correo \(correo), la contraseña \(contraseña) y confirmación de contraseña \(confirmarcontraseña)")
+            
+                //validación contraseña
+                if contraseña == confirmarcontraseña{
+                  
+                    let objetoActualizadorDatos = SaveData()
+                    
+                    let resultado = objetoActualizadorDatos.guardarDatos(correo: correo, contrasena: contraseña, nombre: "")
+                    
+                    print("Se guardaron los datos con exito?: \(resultado)")
+                    
+                }else{
+                    
+                    print("Contraseñas diferentes, vuelve a intentarlo")
+                }
+    }
+    
 }
 
-
-func TomarFoto(){
-    print("Voy a tomar fotografia de perfil")
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -3,25 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2879782A270A6979008CF475 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 28797829270A6979008CF475 /* Kingfisher */; };
+		2879782C270A6F3F008CF475 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2879782B270A6F3F008CF475 /* GameView.swift */; };
 		287DC33A26D49CBD0025CDFD /* RokGamerProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DC33926D49CBD0025CDFD /* RokGamerProApp.swift */; };
 		287DC33C26D49CBD0025CDFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DC33B26D49CBD0025CDFD /* ContentView.swift */; };
 		287DC33E26D49CBE0025CDFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287DC33D26D49CBE0025CDFD /* Assets.xcassets */; };
 		287DC34126D49CBE0025CDFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287DC34026D49CBE0025CDFD /* Preview Assets.xcassets */; };
+		288059FD2709478E00715351 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288059FC2709478E00715351 /* GamesView.swift */; };
+		28805A01270948EA00715351 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28805A00270948EA00715351 /* Model.swift */; };
+		28805A042709490C00715351 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28805A032709490C00715351 /* ViewModel.swift */; };
 		28B13F0B26EEAE3A0000BA58 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B13F0A26EEAE3A0000BA58 /* Home.swift */; };
+		28D206E3270D44D200C65696 /* SearchGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206E2270D44D200C65696 /* SearchGame.swift */; };
+		28D206E5270D52B700C65696 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206E4270D52B700C65696 /* FavoritesView.swift */; };
+		28D206E9270D562400C65696 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206E8270D562400C65696 /* SaveData.swift */; };
+		28D206EB270D569200C65696 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206EA270D569200C65696 /* ProfileView.swift */; };
+		28D206ED270D56FA00C65696 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206EC270D56FA00C65696 /* EditProfileView.swift */; };
+		28D206EF270D5B5300C65696 /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D206EE270D5B5300C65696 /* SUImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2879782B270A6F3F008CF475 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		287DC33626D49CBD0025CDFD /* RokGamerPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokGamerPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287DC33926D49CBD0025CDFD /* RokGamerProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokGamerProApp.swift; sourceTree = "<group>"; };
 		287DC33B26D49CBD0025CDFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		287DC33D26D49CBE0025CDFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287DC34026D49CBE0025CDFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		287DC34226D49CBE0025CDFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288059FC2709478E00715351 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		28805A00270948EA00715351 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		28805A032709490C00715351 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		28B13F0A26EEAE3A0000BA58 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		28D206E2270D44D200C65696 /* SearchGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGame.swift; sourceTree = "<group>"; };
+		28D206E4270D52B700C65696 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		28D206E8270D562400C65696 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		28D206EA270D569200C65696 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		28D206EC270D56FA00C65696 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		28D206EE270D5B5300C65696 /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2879782A270A6979008CF475 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +76,8 @@
 		287DC33826D49CBD0025CDFD /* RokGamerPro */ = {
 			isa = PBXGroup;
 			children = (
+				288059FF270948D100715351 /* ModelViews */,
+				288059FE270948B100715351 /* Models */,
 				28B13F0926EEAE100000BA58 /* View */,
 				287DC33926D49CBD0025CDFD /* RokGamerProApp.swift */,
 				287DC33B26D49CBD0025CDFD /* ContentView.swift */,
@@ -72,10 +96,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		288059FE270948B100715351 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28805A00270948EA00715351 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		288059FF270948D100715351 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				28805A032709490C00715351 /* ViewModel.swift */,
+				28D206E2270D44D200C65696 /* SearchGame.swift */,
+				28D206E8270D562400C65696 /* SaveData.swift */,
+				28D206EE270D5B5300C65696 /* SUImagePickerView.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
 		28B13F0926EEAE100000BA58 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				28B13F0A26EEAE3A0000BA58 /* Home.swift */,
+				288059FC2709478E00715351 /* GamesView.swift */,
+				2879782B270A6F3F008CF475 /* GameView.swift */,
+				28D206E4270D52B700C65696 /* FavoritesView.swift */,
+				28D206EA270D569200C65696 /* ProfileView.swift */,
+				28D206EC270D56FA00C65696 /* EditProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +144,9 @@
 			dependencies = (
 			);
 			name = RokGamerPro;
+			packageProductDependencies = (
+				28797829270A6979008CF475 /* Kingfisher */,
+			);
 			productName = RokGamerPro;
 			productReference = 287DC33626D49CBD0025CDFD /* RokGamerPro.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 287DC32D26D49CBD0025CDFD;
+			packageReferences = (
+				28797828270A6979008CF475 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 287DC33726D49CBD0025CDFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,9 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28805A01270948EA00715351 /* Model.swift in Sources */,
 				287DC33C26D49CBD0025CDFD /* ContentView.swift in Sources */,
 				28B13F0B26EEAE3A0000BA58 /* Home.swift in Sources */,
+				28D206E3270D44D200C65696 /* SearchGame.swift in Sources */,
+				28D206E9270D562400C65696 /* SaveData.swift in Sources */,
+				28D206EF270D5B5300C65696 /* SUImagePickerView.swift in Sources */,
+				288059FD2709478E00715351 /* GamesView.swift in Sources */,
+				28D206ED270D56FA00C65696 /* EditProfileView.swift in Sources */,
+				28805A042709490C00715351 /* ViewModel.swift in Sources */,
 				287DC33A26D49CBD0025CDFD /* RokGamerProApp.swift in Sources */,
+				2879782C270A6F3F008CF475 /* GameView.swift in Sources */,
+				28D206EB270D569200C65696 /* ProfileView.swift in Sources */,
+				28D206E5270D52B700C65696 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28797828270A6979008CF475 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28797829270A6979008CF475 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28797828270A6979008CF475 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 287DC32E26D49CBD0025CDFD /* Project object */;
 }
